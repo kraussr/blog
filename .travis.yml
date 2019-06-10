@@ -1,0 +1,21 @@
+language: python
+
+install:
+  - sudo apt-get install python-pygments
+  - sudo wget -qO hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
+  - sudo dpkg -i hugo.deb
+
+script:
+  - git submodule foreach -q --recursive 'branch="$(git config -f $toplevel/.gitmodules submodule.$name.branch)"; [ -z "$branch" ] && git checkout master || git checkout $branch'
+  - hugo # This commands builds your website on travis
+
+after_success: |
+    cd public
+    git add .
+    git status
+    git commit -m 'Site push'
+    git push https://$GITHUB_USER:$GITHUB_API_KEY@github.com/kraussr/kraussr.github.io master
+
+branches:
+  only:
+  - master
