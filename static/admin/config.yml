@@ -1,10 +1,10 @@
 publish_mode: editorial_workflow
 backend:
   name: github
-  repo: marksteele/blog
-  base_url: https://RANDOMSTUFF.execute-api.us-east-1.amazonaws.com/prod
+  repo: kraussr/blog
+  base_url: https://30uf5tack8.execute-api.eu-central-1.amazonaws.com/prod/
   auth_endpoint: /oauth/auth
-site_id: www.control-alt-del.org
+site_id: kraussr.github.io
 media_folder: "static/images" 
 public_folder: "/images" 
 collections:
