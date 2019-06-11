@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: "Toying around with a Hugo/TravisCI based JAMStack."
-featured_image: ''
+featured_image: '/images/lemon.jpg'
 ---
 {{< figure src="/images/lemon.jpg" title="Lemon trees and lavender... " >}}
 
