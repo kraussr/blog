@@ -5,6 +5,7 @@ date: '2019-06-11T10:20:42+02:00'
 thumbnail: /images/lemon.jpg
 categories:
   - news
+summary: A first blog entry
 ---
 Still only have the lemon image. Need to go out and take some more pictures.
 
