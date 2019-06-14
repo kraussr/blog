@@ -1,4 +1,4 @@
-baseURL = "http://kraussr.github.io/"
+baseURL = "https://kraussr.github.io/"
 languageCode = "en-us"
 title = "JAMStack Adventures"
 theme = "gohugo-theme-ananke"

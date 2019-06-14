@@ -1,0 +1,24 @@
+<article class="bb b--black-10">
+  <a class="db pv4 ph3 ph0-l no-underline dark-gray dim" href="{{ .URL }}">
+    <div class="flex flex-column flex-row-ns">
+      {{ if .Params.thumbnail }}
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          {{ with .Params.thumbnail }}
+              {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" . ) }}
+              <img src="{{ $imageResource }}" class="db" alt="image from " />
+              {{ $resized := $imageResource.Fill "200x200" }}
+              <img src="{{ $resized.RelPermalink }}" class="db" alt="image from " />
+          {{ end }}
+        </div>
+      {{ end }}
+      <div class="w-100{{ if .Params.thumbnail }} w-60-ns pl3-ns{{ end }}">
+        <h1 class="f3 fw1 athelas mt0 lh-title">{{ .Title }}</h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height">
+          {{ .Summary }}
+        </div>
+        {{/* TODO: add author
+        <p class="f6 lh-copy mv0">By {{ .Author }}</p> */}}
+      </div>
+    </div>
+  </a>
+</article>
