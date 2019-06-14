@@ -7,4 +7,6 @@ categories:
   - news
   - blog
 ---
+![](/images/dsc00041.jpg)
+
 This is test content referencing a picture
