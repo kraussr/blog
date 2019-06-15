@@ -7,8 +7,10 @@
           {{ with .Params.thumbnail }}
               {{ $imageResource := ($.Site.GetPage "section" "upload").Resources.GetMatch (strings.TrimPrefix "/upload/" . ) }}
               <img src="{{ $imageResource }}" class="db" alt="image from " />
-              {{ $resized := $imageResource.Fill "200x200" }}
+              {{/* 
+                {{ $resized := $imageResource.Fill "200x200" }}
               <img src="{{ $resized.RelPermalink }}" class="db" alt="image from " />
+              */}}
           {{ end }}
         </div>
       {{ end }}
