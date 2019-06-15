@@ -3,14 +3,10 @@
     <div class="flex flex-column flex-row-ns">
       {{ if .Params.thumbnail }}
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-              <img src="{{ .Params.thumbnail }}" class="db" alt="image from {{ .Params.title }}" />
           {{ with .Params.thumbnail }}
               {{ $imageResource := ($.Site.GetPage "section" "upload").Resources.GetMatch (strings.TrimPrefix "/upload/" . ) }}
-              <img src="{{ $imageResource }}" class="db" alt="image from " />
-              {{/* 
-                {{ $resized := $imageResource.Fill "200x200" }}
-              <img src="{{ $resized.RelPermalink }}" class="db" alt="image from " />
-              */}}
+              {{ $resized := $imageResource.Fill "200x200" }}
+              <img src="{{ $resized.RelPermalink }}" class="db"/>
           {{ end }}
         </div>
       {{ end }}
