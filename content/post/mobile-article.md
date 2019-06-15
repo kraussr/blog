@@ -8,4 +8,6 @@ featured_image: /upload/img-20190609-wa0003.jpeg
 categories:
   - articles
 ---
-    
+The markdown widget is not working in Android browsers.
+
+After each \`\`blank\`\` the newly entered text is deleted.
