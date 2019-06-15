@@ -6,7 +6,7 @@ backend:
   #auth_endpoint: /oauth/auth
 site_id: kraussr.github.io
 media_folder: "content/upload" 
-public_folder: "/images" 
+public_folder: "/upload" 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
