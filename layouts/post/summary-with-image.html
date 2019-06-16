@@ -4,9 +4,13 @@
       {{ if .Params.thumbnail }}
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           {{ with .Params.thumbnail }}
+            {{if hasPrefix . "/upload/"}}
               {{ $imageResource := ($.Site.GetPage "section" "upload").Resources.GetMatch (strings.TrimPrefix "/upload/" . ) }}
               {{ $resized := $imageResource.Fill "200x200" }}
               <img src="{{ $resized.RelPermalink }}" class="db"/>
+            {{ else }}
+              <img src="{{ . }}" class="db"/>
+            {{ end }}
           {{ end }}
         </div>
       {{ end }}
