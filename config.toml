@@ -18,6 +18,20 @@ enableRobotsTXT = true
   priority = 0.5
   filename = "sitemap.xml"
 
+[outputs]
+home = ["HTML", "Atom"]
+
+[mediaTypes]
+[mediaTypes."application/atom"]
+suffixes = ["xml"]
+
+[outputFormats.Atom]
+mediaType = "application/atom"
+baseName = "feed"
+isPlainText = false
+
+disableKinds = ['RSS']
+
 [params]
   favicon = ""
   description = "The last theme you'll ever need. Maybe."
