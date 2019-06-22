@@ -11,3 +11,5 @@ categories:
 The markdown widget is not working in Android browsers.
 
 After each \`\`blank\`\` the newly entered text is deleted.
+
+This is due to the rich text markdown editor used in netlify CMS. 

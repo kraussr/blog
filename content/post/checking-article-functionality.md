@@ -7,4 +7,4 @@ thumbnail: /upload/lemon_upload.jpg
 categories:
   - news
 ---
-Enabled editing of articles. Not sure why articles and blogs appear with times font when the rest of the theme is sans serif. Will have to look into this.
+Enabled editing of articles. 

@@ -19,7 +19,7 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 [outputs]
-home = ["HTML", "Atom"]
+home = ["HTML", "Atom", "RSS" ]
 
 [mediaTypes]
 [mediaTypes."application/atom"]

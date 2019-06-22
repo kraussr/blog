@@ -2,7 +2,7 @@
 layout: blog
 title: Netlify CMS up and working...
 date: 2019-06-11T08:56:46.101Z
-thumbnail: /images/lemon.jpg
+thumbnail: /upload/lemon_upload.jpg
 categories:
   - news
 ---
