@@ -30,8 +30,6 @@ mediaType = "application/atom"
 baseName = "feed"
 isPlainText = false
 
-disableKinds = ['RSS']
-
 [params]
   favicon = ""
   description = "The last theme you'll ever need. Maybe."
