@@ -45,5 +45,8 @@
   {{ else }}
     src="{{ $src.RelPermalink }}" 
   {{ end }}
-  {{ with .Get "alt" }}alt='{{.}}'{{ end }}>
+  {{ with .Get "alt" }}alt='{{.}}'{{ end }} 
+  {{ with .Get "class" }}class='{{.}}'{{ end }} 
+  {{ with .Get "style" }}style='{{.}}'{{ end }} 
+  />
   
