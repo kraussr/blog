@@ -19,3 +19,5 @@ fields:
 - type: list
   name: categories
   label: categories
+pages:
+- content/blog/forestry-test.md
