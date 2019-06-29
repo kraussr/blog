@@ -7,3 +7,4 @@ categories:
 - ''
 
 ---
+This is a forestry test article to see where the media library is mapped
