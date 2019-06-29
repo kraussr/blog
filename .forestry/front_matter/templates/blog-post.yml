@@ -20,4 +20,5 @@ fields:
   name: categories
   label: categories
 pages:
+- content/post/forestry-test.md
 - content/blog/forestry-test.md
