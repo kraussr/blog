@@ -12,4 +12,3 @@ This is a test text...
 Should be markdown when **formatted**
 
     This is a code block
-    
